@@ -2,4 +2,4 @@ function addTwoNumber(a, b) {
     return a + b
 
 }
-addTwoNumber(5, 6);
+addTwoNumber(5, 7);
