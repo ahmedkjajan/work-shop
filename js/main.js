@@ -1,9 +1,5 @@
-const Products = [{
-        id: 1,
-        name: "ahmed",
-    },
-    {
-        id: 2,
-        name: "ali",
-    },
-]
+function addTwoNumber(a, b) {
+    return a + b
+
+}
+addTwoNumber(5, 6);
