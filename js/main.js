@@ -7,7 +7,3 @@ const Products = [{
         name: "ali",
     },
 ]
-
-Products.map(val => {
-    console.log(val)
-})
