@@ -1,128 +1,190 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    color: #222222;
-    font-family: "Montserrat", sans-serif;
-    height: 3000px;
-}
-
-
-/* Start Navbar */
-
-.navbar {
-    padding: 20px;
-    background: #fff;
-    box-shadow: 1px -3px 20px 0px #e8e7e7;
-    overflow: hidden;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-style: normal;
-    letter-spacing: 1.5px;
-    color: #222222;
-    margin: 0 17px;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: #feed5a;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:hover {
-    outline: 0;
-    border: 0;
-}
-
-@media (max-width: 768px) {
-    .navbar-brand {
-        width: 68%;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    .navbar-brand img {
-        width: 100%;
+    
+    body {
+        color: #222222;
+        font-family: "Montserrat", sans-serif;
+        height: 3000px;
     }
-    .navbar-nav {
-        margin-top: 20px;
+    
+    .btu {
+        background-color: #feed5a;
+        color: #222222;
+        padding: 10px 30px;
+        transition: all .3s ease-in-out;
+        outline: none;
     }
-}
-
-
-/* End Navbar */
-
-
-/* Satart Carousel */
-
-.carousel {
-    padding: 0px 20px;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-    background: none;
-    border: none;
-}
-
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(119, 119, 119, 0.24);
-}
-
-.carousel-caption {
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    color: #222222;
-}
-
-.carousel-caption h5,
-.carousel-caption p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    transform: none;
-    font-style: normal;
-    letter-spacing: 0px;
-    text-align: center;
-}
-
-.carousel-caption h5 span,
-.carousel-caption p span {
-    font-size: 120px;
-    font-family: 'Slackey', cursive;
-}
-
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (max-width: 767px) {
-    .carousel-caption h5,
-    .carousel-caption p {
+    
+    .btu:hover {
+        background: transparent;
+        border: #222222 solid 1px;
+    }
+    /* Start Navbar */
+    
+    .navbar {
+        padding: 20px;
+        background: #fff;
+        box-shadow: 1px -3px 20px 0px #e8e7e7;
+        overflow: hidden;
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-family: "Montserrat", sans-serif;
         font-size: 12px;
+        text-transform: uppercase;
+        font-style: normal;
+        letter-spacing: 1.5px;
+        color: #222222;
+        margin: 0 17px;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        font-weight: 700;
     }
-    .carousel-caption h5 span,
-    .carousel-caption p span {
-        font-size: 12px;
+    
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: #feed5a;
     }
+    
+    .navbar-toggler:focus,
+    .navbar-toggler:hover {
+        outline: 0;
+        border: 0;
+    }
+    
+    @media (max-width: 768px) {
+        .navbar-brand {
+            width: 68%;
+        }
+        .navbar-brand img {
+            width: 100%;
+        }
+        .navbar-nav {
+            margin-top: 20px;
+        }
+    }
+    /* End Navbar */
+    /* Satart Carousel */
+    
     .carousel {
-        transform: translateY(84px);
+        padding: 0px 20px;
     }
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        background: none;
+        border: none;
+    }
+    
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(119, 119, 119, 0.24);
+    }
+    
     .carousel-caption {
         position: absolute;
-        top: 5%;
+        top: 26%;
+        left: 20%;
+        color: #222222;
     }
-}
-
-
-/* End Carousel */
+    
+    .carousel-caption h5,
+    .carousel-caption p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        transform: none;
+        font-style: normal;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+    
+    .carousel-caption h5 span,
+    .carousel-caption p span {
+        font-size: 120px;
+        font-family: 'Slackey', cursive;
+    }
+    
+    .carousel-control-prev i,
+    .carousel-control-next i {
+        font-size: 40px;
+        color: #222222;
+        transition: all .3s ease-in-out;
+    }
+    
+    .carousel-control-prev i:hover,
+    .carousel-control-next i:hover {
+        color: #feed5a;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 37px;
+    }
+    /* Medium devices (tablets, 768px and up) */
+    
+    @media(min-width:768px) and (max-width:991px) {
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+        }
+        .carousel-caption h5,
+        .carousel-caption p {
+            font-size: 20px;
+        }
+        .carousel-caption h5 span,
+        .carousel-caption p span {
+            font-size: 30px;
+        }
+        .btn {
+            font-size: 12px;
+            width: 28%;
+            margin-left: 45px;
+        }
+    }
+    
+    @media(max-width:767px) {
+        .carousel-caption h5,
+        .carousel-caption p {
+            font-size: 22px;
+        }
+        .carousel-caption h5 span,
+        .carousel-caption p span {
+            font-size: 33px;
+        }
+        .carousel {
+            transform: translateY(84px);
+            -webkit-transform: translateY(84px);
+            -moz-transform: translateY(84px);
+            -ms-transform: translateY(84px);
+            -o-transform: translateY(84px);
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 5%;
+        }
+        .carousel-control-prev {
+            left: 20px;
+            top: 8px;
+        }
+        .carousel-control-next {
+            right: 20px;
+            top: 8px;
+        }
+        .carousel-control-prev i,
+        .carousel-control-next i {
+            font-size: 22px;
+        }
+        .btn {
+            font-size: 10px;
+            width: 56%;
+            margin-left: 45px;
+        }
+    }
